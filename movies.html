@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - Netflix </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="Netflix" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tvshows.html">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mylist.html">My List</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <div class="input-group me-3">
+                        <input type="text" class="form-control bg-dark text-white border-secondary"
+                            placeholder="Search movies...">
+                        <button class="btn btn-outline-light" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-light">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="featured-section-header py-5" style="margin-top: 60px;">
+        <div class="container">
+            <div class="position-relative">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://imgc.allpostersimages.com/img/posters/netflix-squid-game-season-2-red-guards_u-L-Q1SVPZS0.jpg"
+                                class="d-block w-100" style="height: 60vh; object-fit: cover;" alt="Featured Movie">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imgc.allpostersimages.com/img/posters/netflix-squid-game-season-2-red-guards_u-L-Q1SVPZS0.jpg"
+                                class="d-block w-100" style="height: 60vh; object-fit: cover;" alt="Featured Movie">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imgc.allpostersimages.com/img/posters/netflix-squid-game-season-2-red-guards_u-L-Q1SVPZS0.jpg"
+                                class="d-block w-100" style="height: 60vh; object-fit: cover;" alt="Featured Movie">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="position-absolute bottom-0 start-0 p-5 w-100"
+                    style="background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);">
+                    <h1 class="display-4">Squid Game</h1>
+                    <p class="lead">A gripping thriller where participants in desperate financial situations compete in
+                        deadly children's games for a massive cash prize. Dive into this intense and suspenseful series
+                        full of twists and emotional drama. Watch now and experience the tension of Squid Game.</p>
+                    <button class="btn btn-danger btn-lg me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-play"></i> Play</button>
+                    <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-info-circle"></i> More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-body bg-dark text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome to Netflix</h1>
+                    <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                        class="img-fluid mb-3" alt="Image">
+                    <div class="modal-footer">
+                        <a href="login.html" class="btn btn-danger">Login</a>
+                        <a href="signup.html" class="btn btn-outline-light me-2">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="action-movies py-5">
+        <div class="container">
+            <h2 class="mb-4">Action Movies</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="drama-movies py-5 bg-black">
+        <div class="container">
+            <h2 class="mb-4">Drama</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comedy-movies py-5">
+        <div class="container">
+            <h2 class="mb-4">Comedy</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark">
+                        <img src="https://imgc.allpostersimages.com/img/posters/24x36-netflix-stranger-things-one-sheet-premium-poster_u-L-F9PHCD0.jpg"
+                            class="card-img-top" alt="Movie">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Questions? Contact us.</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Account</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Media Center</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Investor Relations</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Privacy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
