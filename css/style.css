@@ -63,13 +63,85 @@ section h2 {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .hero-section h1 {
         font-size: 2rem;
     }
 
     .hero-section .lead {
         font-size: 1rem;
+    }
+    .sidebar {
+        display: none; 
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .dashboard-header {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 400px) {
+    
+    
+    .hero-section h1 {
+        font-size: 1rem;
+    }
+
+    .hero-section .lead {
+        font-size: .5rem;
+    }
+    .hero-section a {
+        font-size: .5rem;
+        padding: 5px !important;
+        margin: 0 !important;
+        text-align: center !important;
+        align-self: center !important;
+    }
+    input::placeholder {
+        font-size: .5rem;
+      }
+    .form-control {
+        font-size: .5rem;
+        padding: 5px !important;
+        margin: 0 !important;
+        text-align: center !important;
+        align-self: center !important;
+    }
+    .offcanvas.offcanvas-start{
+        width: 200px !important; 
+    }
+
+    .offcanvas .offcanvas-header {
+        font-size: 16px;
+    }
+
+    .offcanvas .offcanvas-body {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .card img {
+        height: auto;
+        width: 100%;
+    }
+
+    .dashboard-header p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 0.25rem 0.5rem;
     }
 }
 footer {
